@@ -1,0 +1,412 @@
+Q1. #include<stdio.h>
+    int main (){
+    int a;
+    printf("Enter the value of a :- ");
+    scanf("%d", &a);
+    if(a > 50)
+    {
+        printf("a is greater than 50");
+    }
+    else 
+    {
+        printf("a is smaller than 50");
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------
+
+Q2. #include<stdio.h>
+    int main (){
+    int a;
+    printf("Enter the value of a :- ");
+    scanf("%d", &a);
+    if(a > 342)
+    {
+        printf("a is greater than 342");
+    }
+    else 
+    {
+        printf("a is smaller than 342");
+    }
+    return 0;
+}
+-------------------------------------------------------------------------
+
+Q3. #include<stdio.h>
+    int main (){
+    int a;
+    printf("Enter the value of a :- ");
+    scanf("%d", &a);
+    if(a < 50)
+    {
+        printf("a is less than 50");
+    }
+    else 
+    {
+        printf("a is greater than 50");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------
+
+Q4. #include<stdio.h>
+    int main (){
+    int a;
+    printf("Enter a Number :- ");
+    scanf("%d", &a);
+    if(a%2==0)
+    {
+        printf("This Number is Even");
+    }
+    else 
+    {
+        printf("This Number is Odd");
+    }
+    return 0;
+}
+-------------------------------------------------------------------------------
+
+Q5. #include<stdio.h>
+    int main (){
+    int a;
+    printf("Enter a Number :- ");
+    scanf("%d", &a);
+    if(a%5==0)
+    {
+        printf("This Number is Divisible");
+    }
+    else 
+    {
+        printf("This Number is not Divisible");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------
+
+Q6. #include<stdio.h>
+    int main () {
+    int a;
+    printf("Enter a Number :- ");
+    scanf("%d", &a);
+    if(a % 88==0)
+    {
+        printf("This Number is Divisible");
+    }
+    else 
+    {
+        printf("This Number is not Divisible");
+    }
+    return 0;
+}
+--------------------------------------------------------------
+
+Q7. #include<stdio.h>
+    int main () {
+    int a;
+    printf("Enter a Number :- ");
+    scanf("%d", &a);
+    if(a == 88)
+    {
+        printf("This Number is Equal");
+    }
+    else 
+    {
+        printf("This Number is invalid");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------
+
+Q8. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'b')
+    {
+        printf("BALL");
+    }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+------------------------------------------------------------------------------
+
+Q9. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'k')
+    {
+        printf("KITE");
+    }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------
+
+Q10. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'a')
+    {
+       int a;
+       printf("Enter the value of a :- ");
+       scanf("%d", &a);
+       int b;
+       printf("Enter the value of b :- ");
+       scanf("%d", &b);
+       int c = a + b;
+       printf("Addition of two number is : %d",c);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------
+
+Q11. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 's')
+    {
+       int a;
+       printf("Enter the value of a :- ");
+       scanf("%d", &a);
+       int b;
+       printf("Enter the value of b :- ");
+       scanf("%d", &b);
+       int c = a - b;
+       printf("Subtraction of two number is : %d",c);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+} 
+--------------------------------------------------------------------------------------
+
+Q12. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'm')
+    {
+       int a;
+       printf("Enter the value of a :- ");
+       scanf("%d", &a);
+       int b;
+       printf("Enter the value of b :- ");
+       scanf("%d", &b);
+       int c; 
+       printf("Enter the value of c :- ");
+       scanf("%d", &c);
+       int d = a * b * c;
+       printf("Multiplication of three number is : %d", d);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+------------------------------------------------------------------------------
+
+Q13. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'd')
+    {
+       int a;
+       printf("Enter the value of a :- ");
+       scanf("%d", &a);
+       int b;
+       printf("Enter the value of b :- ");
+       scanf("%d", &b);
+       int d = a / b ;
+       printf("Dividation of two number is : %d", d);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------
+
+Q14. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'o')
+    {
+       int a;
+       printf("Enter the value of a :- ");
+       scanf("%d", &a);
+       int b;
+       printf("Enter the value of b :- ");
+       scanf("%d", &b);
+       int c = a % b ;
+       printf("Remainder of two number is : %d", c);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------
+
+Q15. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 't')
+    {
+       int base;
+       printf("Enter the value of base :- ");
+       scanf("%d", &base);
+       int height;
+       printf("Enter the value of height :- ");
+       scanf("%d", &height);
+       float a = 0.5 * (base * height);
+       printf("Area of triangler is : %f", a);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------
+
+Q16. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'c')
+    {
+       float radius;
+       printf("Enter the value of radius :- ");
+       scanf("%f", &radius);
+       float a = 3.14 * radius * radius;
+       printf("Area of circle is : %f", a);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+--------------------------------------------------------------------------------------
+
+Q17. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'r')
+    {
+       float width;
+       printf("Enter the value of width :- ");
+       scanf("%f", &width);
+       float length;
+       printf("Enter the value of length :- ");
+       scanf("%f", &length);
+       float a = width * length;
+       printf("Area of rectangle is : %f", a);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+------------------------------------------------------------------------------------
+
+Q18. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 'h')
+    {
+       float radius;
+       printf("Enter the value of radius :- ");
+       scanf("%f", &radius);
+       float a = 2 * 3.14 * radius * radius * radius / 3 ;  //2πr3/3
+       printf("Volume of hemisphere is : %f", a);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+----------------------------------------------------------------------------------
+
+Q19. #include<stdio.h>
+    int main () {
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", & alpha);
+    if(alpha == 's')
+    {
+       float radius;
+       printf("Enter the value of radius :- ");
+       scanf("%f", &radius);
+       float a = 4 / 3  * 3.14 * radius * radius * radius ;  // 4/3πr3
+       printf("Volume of Sphere is : %f", a);
+   }
+    else 
+    {
+        printf("Invalid : Try Again!");
+    }
+    return 0;
+}
+-----------------------------------------------------------------------------------
+
+Q20. #include<stdio.h>
+int main(){
+    char alpha;
+    printf("Enter any one Character :- ");
+    scanf("%c", &alpha);
+    if (alpha == 'r')
+    { 
+        float p;
+        printf("Enter the value of Diagonal 1 :- ");
+        scanf("%f", &p);
+        float q;
+        printf("Enter the value of Diagonal 2 :- ");
+        scanf("%f", &q);
+        float a = p * q / 2 ;
+        printf("Area of Rhombus is : %f", a);
+        // p * q / 2
+    }
+        else {
+            printf("Invalid: Try Again!");
+        }
+    return 0;
+}
+
+
+-------------------------------------------------------------------------------------
