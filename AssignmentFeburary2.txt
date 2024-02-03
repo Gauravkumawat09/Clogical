@@ -1,0 +1,143 @@
+Q1. #include<stdio.h>
+int main() {
+    int a;
+    printf(" Enter a Number");
+    scanf("%d", &a);
+    printf("%d", a);
+}
+
+Q2. #include<stdio.h>
+int main() {
+    float a;
+    printf(" Enter a Number");
+    scanf("%f", &a);
+    printf("%f", a);
+}
+
+Q3. #include<stdio.h>
+int main() {
+    char a;
+    printf(" Enter a Character");
+    scanf("%c", &a);
+    printf("%c", a);
+}
+
+Q4. #include<stdio.h>
+int main() {
+    int a, b, c;
+    
+    printf("Enter First Number");
+    scanf("%d", &a);
+    printf("Enter Second Number");
+    scanf("%d", &b);
+    c = a + b;
+    printf("%d", c);
+} 
+
+Q5. #include<stdio.h>
+int main() {
+    int a, b, c;
+    
+    printf("Enter First Number");
+    scanf("%d", &a);
+    printf("Enter Second Number");
+    scanf("%d", &b);
+    c = a / b;
+    printf("%d", c);
+} 
+
+Q6. #include<stdio.h>
+int main(){
+    int a, b, c, d, e, f, total;
+    printf("Enter the First Number");
+    scanf("%d", &a);
+    printf("Enter the Second Number");
+    scanf("%d", &b);
+    printf("Enter the Third Number");
+    scanf("%d", &c);
+    printf("Enter the Fourth Number");
+    scanf("%d", &d);
+    printf("Enter the Fifth Number");
+    scanf("%d", &e);
+    printf("Enter the Sixth Number");
+    scanf("%d", &f);
+    total = a + b + c + d + e + f;
+    printf("%d", total);
+    return 0;
+}
+
+Q7. #include<stdio.h>
+int main (){
+    int a, b, c, d, ans;
+    printf("Enter First Number");
+    scanf("%d", &a);
+    printf("Enter Second Number");
+    scanf("%d", &b);
+    printf("Enter Third Number");
+    scanf("%d", &c);
+    printf("Enter Fourth Number");
+    scanf("%d", &d);
+    ans = a * b - c + d;
+    printf("ans is: %d", ans);
+    
+    return 0;
+}
+
+Q8. #include<stdio.h>
+int main (){
+    int a, b, c, d, ans;
+    printf("Enter First Number");
+    scanf("%d", &a);
+    printf("Enter Second Number");
+    scanf("%d", &b);
+    printf("Enter Third Number");
+    scanf("%d", &c);
+    printf("Enter Fourth Number");
+    scanf("%d", &d);
+    ans = a + (b * c) - d;
+    printf("ans is: %d", ans);
+    
+    return 0;
+}
+
+Q9. #include<stdio.h>
+int main (){
+    int a, b, c, d;
+    float e, ans;
+    printf("Enter First Number");
+    scanf("%f", &e);
+    printf("Enter Second Number");
+    scanf("%d", &a);
+    printf("Enter Third Number");
+    scanf("%d", &b);
+    printf("Enter Fourth Number");
+    scanf("%d", &c);
+    printf("Enter Fifth Number");
+    scanf("%d", &d);
+    ans = e * (a + b) / c - d;
+    printf("ans is: %f", ans);
+    
+    return 0;
+}
+
+Q10. #include<stdio.h>
+int main (){
+    float a, c, d, ans;
+    int b, e, f;
+    printf("Enter First Number");
+    scanf("%f", &a);
+    printf("Enter Second Number");
+    scanf("%d", &b);
+    printf("Enter Third Number");
+    scanf("%f", &c);
+    printf("Enter Fourth Number");
+    scanf("%f", &d);
+    printf("Enter Fifth Number");
+    scanf("%d", &e);
+    printf("Enter Fifth Number");
+    scanf("%d", &f);
+    ans = a * b + c * d - e / b + f;
+    printf("ans is: %f", ans);
+    
+    return 0;
+}
