@@ -1,0 +1,190 @@
+Assignment Feburary 1 :-
+
+
+Q1. #include<stdio.h>
+int main(){
+    printf("INDIA\n");
+    printf("PAKISTAN\n");
+    printf("AMERICA\n");
+    printf("ITALY\n");
+    printf("AUSTRALIA\n");
+    return 0;
+}
+
+
+Q2. #include<stdio.h>
+int main(){
+    printf("Uttam\n");
+    printf("Lakshay\n");
+    printf("Shivam\n");
+    printf("Tarun\n");
+    printf("Gaurav\n");
+    return 0;
+}
+
+Q3. #include<stdio.h>
+int main(){
+    printf("Jaipur\n");
+    printf("Mumbai\n");
+    printf("Shimla\n");
+    printf("Laddakh\n");
+    printf("Udaipur\n");
+    return 0;
+}
+
+Q4. #include<stdio.h>
+int main(){
+    printf("Chole Bhature\n");
+    printf("Pizza\n");
+    printf("Momos\n");
+    printf("Burger\n");
+    printf("Pasta\n");
+    return 0;
+}
+
+Q5. #include<stdio.h>
+int main(){
+    printf("Rajasthan\n");
+    printf("Jammu & Kashmir\n");
+    printf("Karnataka\n");
+    printf("Uttar Pradesh\n");
+    printf("Gujrat\n");
+    return 0;
+}
+
+Q6. #include<stdio.h>
+int main(){
+    int a=23;
+    printf("%d", a);
+    return 0;
+}
+
+Q7. #include<stdio.h>
+int main(){
+    int a=65;
+    printf("%d", a);
+    return 0;
+}
+
+Q8. #include<stdio.h>
+int main(){
+    int a=-23;
+    printf("%d", a);
+    return 0;
+}
+
+Q9. #include<stdio.h>
+int main(){
+    float a=1.56;
+    printf("%f", a);
+    return 0;
+}
+
+Q10. #include<stdio.h>
+int main(){
+    float a=0.8;
+    printf("%f", a);
+    return 0;
+}
+
+Q11. #include<stdio.h>
+int main(){
+    float a=-2.752;
+    printf("%f", a);
+    return 0;
+}
+
+Q12. #include<stdio.h>
+int main(){
+    char a = 't' ;
+    printf("%c", a);
+    return 0;
+}
+
+Q13. #include<stdio.h>
+int main(){
+    int a=123456;
+    printf("%d", a);
+    return 0;
+}
+
+Q14. #include<stdio.h>
+int main(){
+    char a = 'o' ;
+    printf("%c", a);
+    return 0;
+}
+
+Q15. #include<stdio.h>
+int main(){
+    int a = 34, b = 89, c ;
+    c = a + b;
+    printf("%d", c);
+    return 0;
+}
+
+Q16. #include<stdio.h>
+int main(){
+    int a = 2, b = 2, c ;
+    c = a * b;
+    printf("%d", c);
+    return 0;
+}
+
+Q17. #include<stdio.h>
+int main(){
+    int a = 67, b = 4, c ;
+    c = a - b;
+    printf("%d", c);
+    return 0;
+}
+
+Q18. #include<stdio.h>
+int main(){
+    int a = 24, b = 2, c ;
+    c = a / b;
+    printf("%d", c);
+    return 0;
+}
+
+Q19. #include<stdio.h>
+int main(){
+    int a = 2, b = 6, c = 1, d = 5, e = 78, f = 12, g ;
+    g = a + b + c + d + e + f;
+    printf("%d", g);
+    return 0;
+}
+
+Q20. #include<stdio.h>
+int main(){
+    int a = 23, b = 2, c = 9, d = 34, e ;
+    e = a * b - c +d;
+    printf("%d", e);
+    return 0;
+}
+
+Q21. #include<stdio.h>
+int main(){
+    int a = 12, b = 34, c = 2, d = 45, e ;
+    e = a + (b * c) - d;
+    printf("%d", e);
+    return 0;
+}
+
+Q22. #include<stdio.h>
+int main (){
+    int a = 34, b = 1, c = 2, d = 45;
+    float e = 1.2, ans;
+    ans = e * (a + b) / c - d;
+    printf("ans is: %f", ans);
+    return 0;
+} 
+
+Q23. #include<stdio.h>
+int main (){
+    float a = 4.5, c = 8.9, d = 1.2, ans;
+    int b = 2, e = 89, f = 34;
+    ans = a * b + c * d - e / b + f;
+    printf("%f", ans);
+    return 0;
+} 
