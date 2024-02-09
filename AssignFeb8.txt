@@ -1,0 +1,1023 @@
+Q1. 
+
+// Sum of Digit
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int rem, sum = 0;
+    while ( num > 0)
+    {
+        rem = num % 10;
+        sum = sum + rem;
+        num = num / 10;
+    }
+    printf("%d", sum);
+    return 0 ;
+}
+---------------------------------------
+
+Q2. 
+
+//  Count of Digit
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int count = 0;
+    while(num > 0)
+    {
+    count++;
+    num = num / 10;
+    }
+    printf("%d", count);
+    return 0;
+}    
+---------------------------------------
+
+Q3. 
+
+// 1-->10 number sum loop 
+
+
+#include<stdio.h>
+int main()
+{
+    int num = 1, sum = 0;
+    while (  num <= 10)
+    {
+        sum = sum + num;
+        num ++;
+    }
+    printf("%d", sum);
+    return 0;
+}
+---------------------------------------
+
+Q4. 
+
+ // 34--->78 :number sum 
+
+
+#include<stdio.h>
+int main()
+{
+    int num = 34, sum = 0;
+    while (  num <= 78)
+    {
+        sum = sum + num;
+        num ++;
+    }
+    printf("%d", sum);
+    return 0;
+}
+---------------------------------------
+
+Q5. 
+
+// 99--->92 :value sum 
+
+
+#include<stdio.h>
+int main()
+{
+    int num = 99, sum = 0;
+    while (  num >= 92)
+    {
+        sum = sum + num;
+        num --;
+    }
+    printf("%d", sum);
+    return 0;
+}
+---------------------------------------
+
+Q6. 
+
+// User Input 1
+// 1---->100 even number 
+
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    while(num <= 100)
+    {
+        if ( num % 2 == 0)
+        {
+            printf(" %d", num);
+        }
+    num++;
+    }
+    return 0;
+}
+---------------------------------------
+
+Q7. 
+
+// User Input 50
+//  50---->1 even number 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    while(num >= 1)
+    {
+        if ( num % 2 == 0)
+        {
+            printf(" %d", num);
+        }
+    num--;
+    }
+    return 0;
+}
+---------------------------------------
+
+Q8. 
+
+// User Input 23
+// 23--->78 even number 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    while(num <= 78)
+    {
+        if ( num % 2 == 0)
+        {
+            printf(" %d", num);
+        }
+    num++;
+    }
+    return 0;
+}
+---------------------------------------
+
+Q9. 
+
+// User Input 1
+// 1---->100 odd number 
+
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    while(num <= 100)
+    {
+        if ( num % 2 == 1)
+        {
+            printf(" %d", num);
+        }
+    num++;
+    }
+    return 0;
+} 
+---------------------------------------
+
+Q10. 
+
+// User Input 50
+// 50---->1 odd number 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    while(num >= 1)
+    {
+        if ( num % 2 == 1)
+        {
+            printf(" %d", num);
+        }
+    num--;
+    }
+    return 0;
+}
+---------------------------------------
+
+Q11. 
+
+// User Input 23
+ // 23--->78 odd number 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    while(num <= 78)
+    {
+        if ( num % 2 == 1)
+        {
+            printf(" %d", num);
+        }
+    num++;
+    }
+    return 0;
+} 
+---------------------------------------
+
+Q12.
+
+// User Input 1
+// 1--->10 number through for loop
+
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i<=5; i++ )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q13. 
+
+// User Input 1
+// 1--->100 number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i<=100; i++ )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q14. 
+
+// User Input 50
+// 50--->100 number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i<=100; i++ )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q15.
+
+// User Input 23
+// 23---->78 number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i<=78; i++ )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q16. 
+
+// User Input 100
+// 100---->1 number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i>=1; i-- )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q17. 
+
+// User Input 100
+// 100---->50 number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i>=50; i-- )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q18.
+
+// User Input 99
+// 99---->80 number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i>=80; i-- )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q19. 
+
+// User Input 1
+// 1--->10 even number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=10; i++)
+    {
+        if ( i%2==0)
+        {
+            printf("%d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q20. 
+
+// User Input 1
+// 1--->100 even number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=10; i++)
+    {
+        if ( i%2==0)
+        {
+            printf("%d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q21.
+
+// User Input 50
+// 50--->100 even number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=100; i++)
+    {
+        if ( i%2==0)
+        {
+            printf("%d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q22. 
+
+// User Input 23
+// 23---->78 even number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=78; i++)
+    {
+        if ( i%2==0)
+        {
+            printf("%d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q23. 
+
+// User Input 1
+// 1--->10 odd number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=10; i++)
+    {
+        if ( i%2==1)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q24. 
+
+// User Input 1
+// 1--->100 odd number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=100; i++)
+    {
+        if ( i%2==1)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q25. 
+
+// User Input 50 
+// 50--->100 odd number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=100; i++)
+    {
+        if ( i%2==1)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q26. 
+
+// User Input 23
+// 23---->78 odd number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=78; i++)
+    {
+        if ( i%2==1)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q27. 
+
+// User Input 100
+// 100---->1 even number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i>=1; i--)
+    {
+        if ( i%2==0)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q28. 
+
+// User Input 100
+// 100---->50 even number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i>=50; i--)
+    {
+        if ( i%2==0)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q29. 
+
+// User Input 99
+// 99---->80 even number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i>=80; i--)
+    {
+        if ( i%2==0)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q30. 
+
+// User Input 100
+// 100---->1 odd number through for loop
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i>=1; i--)
+    {
+        if ( i%2==1)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q31. 
+
+// User Input 100
+// 100---->50 odd number through for loop
+
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i>=50; i--)
+    {
+        if ( i%2==1)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q32. 
+
+// User Input 
+// 99---->80 odd number through for loop
+
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i>=80; i--)
+    {
+        if ( i%2==1)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q33.
+
+// User Input a, p, r, c, s, o, w, f, l, u, t, y
+
+#include<stdio.h>
+int main()
+{
+    char a;
+    printf("Enter a Character :- ");
+    scanf("%c", &a);
+    
+    // Armstrong
+    
+    
+    if ( a == 'a')
+    {
+        int num, rem, sum = 0;
+        printf("Enter a Number :- ");
+        scanf("%d", &num);
+        int temp = num;
+        while ( num>0 )
+        {
+            rem = num % 10;
+            sum = sum + rem * rem * rem;
+            num = num / 10;
+        }
+        if ( sum == temp)
+        {
+            printf("This Number is Armstrong");
+        }
+        else 
+        {
+            printf("This is Number is Not Armstrong");
+        }
+    }
+    
+    // Pallindrome
+    
+    else if ( a == 'p')
+    {
+        int num, rem, sum = 0;
+        printf("Enter a Number :- ");
+        scanf("%d", &num);
+        int temp = num;
+        while(num>0)
+        {
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num / 10;
+        }
+        if ( sum == temp)
+        {
+            printf("This Number is Pallindrome");
+        }
+        else 
+        {
+            printf("This Number is Not Pallindrome");
+        }
+    }
+    
+    // Reverse Number
+    
+    else if ( a == 'r')
+    {
+        int num, rem, sum = 0;
+        printf("Enter a Character :- ");
+        scanf("%d", &num);
+        while ( num > 0)
+        {
+            rem = num % 10;
+            sum = sum * 10 + rem;
+            num = num /10;
+        }
+        printf("%d", sum);
+    }
+    
+    // Count Number
+    
+    else if ( a == 'c')
+    {
+        int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int count = 0;
+    while(num > 0)
+    {
+    count++;
+    num = num / 10;
+    }
+    printf("%d", count);
+    }
+    
+    // sum of Digit 
+    
+    else if ( a == 's')
+    {
+        int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int rem, sum = 0;
+    while ( num > 0)
+    {
+        rem = num % 10;
+        sum = sum + rem;
+        num = num / 10;
+    }
+    printf("%d", sum);
+    }
+    
+    // sum of loop numbers 
+    
+    else if ( a == 'o')
+    {
+        int num, sum = 0;
+        printf("Enter A Number :- ");
+        scanf("%d", &num);
+    while (  num <= 10)
+    {
+        sum = sum + num;
+        num ++;
+    }
+    printf("%d", sum);
+    }
+
+// While Loop Even Odd
+
+    else if ( a == 'w')
+    {
+        char e;
+        printf("Enter a Character :- ");
+        scanf(" %c", &e);
+        if ( e == 'e')
+        {
+            int a = 1;
+            while ( a <= 100)
+            {
+                if( a % 2 == 0)
+                {
+                    printf("%d", a);
+                }
+            a++;
+            }
+        }
+        else if ( e == 'd')
+        {
+            int a = 100;
+            while (a >= 1)
+            {
+                if( a % 2 == 1)
+                {
+                    printf(" %d", a);
+                }
+                a--;
+            }
+        }
+    }
+
+// For loop Even Odd
+
+else if ( a == 'f')
+{
+    char e;
+        printf("Enter a Character :- ");
+        scanf(" %c", &e);
+        if ( e == 'e')
+        {
+            int i;
+            for ( i = 1; i <= 100; i++)
+            {
+                if ( i % 2 == 0)
+                {
+                    printf(" %d", i);
+                }
+            }
+        }
+        else if ( e == 'd')
+        {
+            int i;
+            for ( i = 100; i >= 1; i--)
+            {
+                if ( i % 2 == 1)
+                {
+                    printf(" %d", i);
+                }
+            }
+        }
+        else 
+        {
+            printf("Invalid Character: \n Try Again!!");
+        }
+}
+
+
+// Factorial 
+
+else if ( a == 'm')
+{
+    int num, fact = 1, i;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    for ( i = 1; i <= num; i++ )
+    {
+        fact = fact * i;
+    }
+    printf(" %d", fact);
+}
+
+// u :sum of loop number (for loop )
+ else if ( a == 'u')
+ {
+     int i=1;
+     int sum = 0;
+     for ( int i ; i <= 10; i++ )
+     {
+         sum = sum + i; 
+     }
+     printf("%d", sum);
+ } 
+ 
+ // t :table print (2 table)
+
+else if ( a == 't')
+{
+    char t;
+    printf("Enter a Character :- ");
+    scanf(" %c", &t);
+    if ( t == 'w')
+    {
+        int num, i, sum;
+        printf("Enter a Number :-");
+        scanf("%d", &num);
+        while( i <= 10 )
+        {
+            sum = num * i;
+            printf("%d \n",sum );
+            i++;
+        }
+    }
+    else if ( t == 'f')
+    {
+        int num, sum;
+        printf("Enter a Number :- ");
+        scanf("%d", &num);
+        for ( int i = 1; i <= 10; i++)
+        {
+            sum = num * i;
+            printf("%d \n", sum);
+        }
+    }
+    else 
+    {
+       printf("Invalid Character: \n Try Again!!");
+
+    }
+    
+}
+
+// y :calculator :
+
+else if (a == 'y')
+{
+    char c;
+    printf("Enter a Character :- ");
+    scanf(" %c", &c);
+    
+    if ( c == 'a')
+    
+    {
+    int num1;
+    printf("Enter a Number :- ");
+    scanf("%d", &num1);
+    int num2, add;
+    printf("Enter Second Number :- ");
+    scanf("%d", &num2);
+    add = num1 + num2;
+    printf("%d", add);
+    }
+    
+    else if ( c == 's')
+    
+    {
+    int num1;
+    printf("Enter a Number :- ");
+    scanf("%d", &num1);
+    int num2, sub;
+    printf("Enter Second Number :- ");
+    scanf("%d", &num2);
+    sub = num1 - num2;
+    printf("%d", sub);
+    }
+    
+    else if ( c == 'm')
+    
+    {
+    int num1;
+    printf("Enter a Number :- ");
+    scanf("%d", &num1);
+    int num2, mul;
+    printf("Enter Second Number :- ");
+    scanf("%d", &num2);
+    mul = num1 * num2;
+    printf("%d", mul);
+    }
+    
+    else if ( c == 'd')
+    
+    {
+    int num1;
+    printf("Enter a Number :- ");
+    scanf("%d", &num1);
+    int num2, divi;
+    printf("Enter Second Number :- ");
+    scanf("%d", &num2);
+    divi = num1 / num2;
+    printf("%d", divi);
+    }
+    else 
+    {
+        printf("Invalid Character: \n Try Again!!");
+    }
+    
+    
+}
+
+    else 
+    {
+        printf("Invalid Character: \n Try Again!!");
+    }
+    return 0;
+    
+}
+----------------------------------------------------------------
