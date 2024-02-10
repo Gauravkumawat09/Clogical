@@ -1,0 +1,532 @@
+Q1. 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q2. 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    for ( int i =1; i <= num; i++)
+    {
+        for ( int j = num; j>=i; j-- )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+---------------------------------------
+
+Q3. 
+
+#include<stdio.h>
+int main()
+{
+    int num, rem;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=num; j++)
+        {
+            rem = j % 2;
+            printf("%d", rem);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q4. 
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for ( int j = 1; j<=i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for ( int i =1; i <= 3; i++)
+    {
+        for ( int j = 3; j>=i; j-- )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q5. 
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for ( int j = 1; j<=i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for ( int i =1; i <= 3; i++)
+    {
+        for ( int j = 2; j>=i; j-- )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q6. 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=i; j++)
+        {
+            printf("%d", i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q7. 
+
+#include<stdio.h>
+int main()
+{
+    int num, rem;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=i; j++)
+        {
+            rem = i % 2;
+            printf("%d", rem);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q8. 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=i; j++)
+        {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q9. 
+
+#include<stdio.h>
+int main()
+{
+    int num, rem;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=i; j++)
+        {
+            rem = j % 2;
+            printf("%d", rem);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q10. 
+
+#include<stdio.h>
+int main()
+{
+   int num ;
+    for ( int i=1; i<=4; i++)
+    {
+        for ( int j = 1; j<=i; j++ )
+        {
+            num++;
+            printf("%d", num);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q11. 
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for (int s = 2; s>=i; s--)
+        {
+            printf(" ");
+        }
+        for ( int j = 1; j<=i; j++ )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q12.
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for (int s = 0; s<=i; s++)
+        {
+            printf(" ");
+        }
+        for ( int j = 3; j>=i; j-- )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q13.
+
+#include<stdio.h>
+int main()
+{
+    int num, rem;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=num; j++)
+        {
+            rem = i % 2;
+            printf("%d", rem);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q14. 
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for (int s = 2; s>=i; s--)
+        {
+            printf(" ");
+        }
+        for ( int j = 1; j<=i; j++ )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    for ( int i=1; i<=3; i++)
+    {
+        for (int s = 0; s<=i; s++)
+        {
+            printf(" ");
+        }
+        for ( int j = 3; j>=i; j-- )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    
+    return 0;
+}
+---------------------------------------
+
+Q15. 
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for (int s = 2; s>=i; s--)
+        {
+            printf(" ");
+        }
+        for ( int j = 1; j<=i; j++ )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    for ( int i=1; i<=2; i++)
+    {
+        for (int s = 0; s<=i; s++)
+        {
+            printf(" ");
+        }
+        for ( int j = 2; j>=i; j-- )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    
+    return 0;
+}
+---------------------------------------
+
+Q16. 
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for ( int s =2; s>=i; s--)
+        {
+          printf(" ");  
+        }
+        for ( int j = 1; j<=i; j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q17.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    for ( int i=1; i<=5; i++)
+    {
+        for ( int j = 1; j<=i; j++ )
+        {
+            num = j * 2;
+            printf("%d", num);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q18.
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for (int s = 0; s<=i; s++)
+        {
+            printf(" ");
+        }
+        for ( int j = 3; j>=i; j-- )
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q19. 
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for ( int s =2; s>=i; s--)
+        {
+          printf(" ");  
+        }
+        for ( int j = 1; j<=i; j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    for ( int i=1; i<=3; i++)
+    {
+        for (int s = 0; s<=i; s++)
+        {
+            printf(" ");
+        }
+        for ( int j = 3; j>=i; j-- )
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q20.
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=3; i++)
+    {
+        for ( int s =2; s>=i; s--)
+        {
+          printf(" ");  
+        }
+        for ( int j = 1; j<=i; j++)
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    for ( int i=1; i<=2; i++)
+    {
+        for (int s = 0; s<=i; s++)
+        {
+            printf(" ");
+        }
+        for ( int j = 2; j>=i; j-- )
+        {
+            printf(" *");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+---------------------------------------
+
+Q21. 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=5; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q22. 
+
+#include<stdio.h>
+int main()
+{
+    for ( int i=1; i<=5; i++)
+    {
+        for ( int j = 1; j<=5; j++ )
+        {
+            printf("%d", i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+---------------------------------------
+
+Q23.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=num; j++)
+        {
+            printf("%d", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
