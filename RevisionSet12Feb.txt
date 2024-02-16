@@ -1,0 +1,670 @@
+Q1.
+
+#include<stdio.h>
+int main()
+{
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a;
+    a = b;
+    b = c;
+    printf ( "The Swap Value of First Number is: %d \n", a);
+    printf ( "The Swap Value of Second Number is: %d", b);
+    return 0;
+}
+----------------------------------------------------------------
+
+Q2. 
+
+#include<stdio.h>
+int main()
+{
+    int a, b;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    printf ( "The Swap Value of First Number is: %d \n", a);
+    printf ( "The Swap Value of Second Number is: %d", b);
+    return 0;
+}
+----------------------------------------------------------------
+
+Q3. 
+
+#include<stdio.h>
+int main()
+{
+    int a, b;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    if ( a > b )
+    {
+        printf("%d Number is Greater ", a);
+    }
+    else 
+    {
+        printf("%d Number is Greater", b);
+    }
+    return 0;
+}
+----------------------------------------------------------------
+
+Q4. 
+
+#include<stdio.h>
+int main()
+{
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    printf("Enter Third Number :- ");
+    scanf("%d", &c);
+    if ( a > b && a > c)
+    {
+        printf("%d Number is Greater ", a);
+    }
+    else if ( b > a && b > c)
+    {
+        printf("%d Number is Greater", b);
+    }
+    else 
+    {
+        printf("%d Number is Greater", c);
+    }
+    return 0;
+}
+----------------------------------------------------------------
+
+Q5.
+
+#include<stdio.h>
+int main()
+{
+    int a, b, c, d, e, f, g, h, i, j;
+    printf("Enter Ten Numbers :- ");
+    scanf("%d %d %d %d %d %d %d %d %d %d", &a, &b, &c, &d, &e, &f, &g, &h, &i, &j);
+    if ( a > b && a > c && a > d && a > e && a > f && a > g && a > h && a > i && a > j)
+    {
+        printf("%d Number is Greater ", a);
+    }
+    else if ( b > a && b > c && b > d && b > e && b > f && b > g && b > h && b > i && b > j)
+    {
+        printf("%d Number is Greater", b);
+    }
+    else if ( c > a && c > b && c > d && c > e && c > f && c > g && c > h && c > i && c > j)
+    {
+        printf("%d Number is Greater", c);
+    }
+    else if ( d > a && d > b && d > c && d > e && d > f && d > g && d > h && d > i && d > j)
+    {
+        printf("%d Number is Greater", d);
+    }
+    else if ( e > a && e > b && e > c && e > d && e > f && e > g && e > h && e > i && e > j)
+    {
+        printf("%d Number is Greater", e);
+    }
+    else if ( f > a && f > b && f > c && f > d && f > e && f > g && f > h && f > i && f > j)
+    {
+        printf("%d Number is Greater", f);
+    }
+    else if ( g > a && g > b && g > c && g > d && g > e && g > f && g > h && g > i && g > j)
+    {
+        printf("%d Number is Greater", g);
+    }
+    else if ( h > a && h > b && h > c && h > d && h > e && h > f && h > g && h > i && h > j)
+    {
+        printf("%d Number is Greater", h);
+    }
+    else if ( i > a && i > b && i > c && i > d && i > e && i > f && i > g && i > h && i > j)
+    {
+        printf("%d Number is Greater", i);
+    }
+    else 
+    {
+        printf("%d Number is Greater", j);
+    }
+    return 0;
+}
+---------------------------------------------------------------------------------------------------
+
+Q6.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    if( num % 2 == 0)
+    {
+        printf("This Number is Even");
+    }
+    else
+    {
+        printf("This Number is Odd");
+    }
+}
+--------------------------------------------
+
+Q7.
+
+#include<stdio.h>
+int main()
+{
+    char alpha;
+    printf("Enter Any Character :- ");
+    scanf(" %c", &alpha);
+    if ( alpha == 'a', 'e', 'i', 'o', 'u')
+    {
+        printf("This Character is Vowel");
+    }
+    else 
+    {
+        printf("This Character is Consonant");
+    }
+}
+----------------------------------------------
+
+Q8.
+
+#include<stdio.h>
+int main()
+{
+    char alpha;
+    printf("Enter Any Character :- ");
+    scanf(" %c", &alpha);
+    if ( alpha == 'm')
+    {
+        printf("Male");
+    }
+    else if ( alpha == 'f')
+    {
+        printf("Female");
+    }
+    else 
+    {
+        printf("Other");
+    }
+return 0;
+}
+------------------------------------------
+
+Q9.
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter a Number for Month Check :- ");
+    scanf("%d", &n);
+    
+    if ( n == 1)
+    {
+        printf("January");
+    }
+    else if ( n == 2)
+    {
+        printf("Februray");
+    }
+    else if ( n == 3)
+    {
+        printf("March");
+    }
+    else if (n == 4)
+    {
+        printf("April");
+    }
+    else if (n == 5)
+    {
+        printf("May");
+    }
+    else if ( n == 6)
+    {
+        printf("June");
+    }
+    else if (n == 7)
+    {
+        printf("July");
+    }
+    else if (n == 8)
+    {
+        printf("August");
+    }
+    else if ( n == 9)
+    {
+        printf("Sepetember");
+    }
+    else if (n == 10)
+    {
+        printf("October");
+    }
+    else if(n == 11)
+    {
+        printf("November");
+    }
+    else if( n == 12)
+    {
+        printf("December");
+    }
+    else {
+        printf("Invalid \n Try Again!");
+    }
+    
+    return 0;
+}
+-------------------------------------------
+
+Q10.
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter a Number for Week Check");
+    scanf("%d", &n);
+    if ( n == 1)
+    {
+        printf("Sunday");
+    }
+    else if ( n == 2)
+    {
+        printf("Monday");
+    }
+    else if ( n == 3)
+    {
+        printf("Tuesday");
+    }
+    else if ( n == 4)
+    {
+        printf("Wednesday");
+    }
+    else if( n == 5)
+    {
+        printf("Thursday");
+    }
+    else if (n == 6)
+    {
+        printf("Friday");
+    }
+    else if ( n == 7)
+    {
+        printf("Saturday");
+    }
+    else 
+    {
+        printf("Invalid \n Try Again!");
+    }
+    return 0;
+}
+--------------------------------------------
+
+Q11.
+
+#include<stdio.h>
+int main()
+{
+    int num ;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int rem, sum = 0;
+    while ( num > 0)
+    {
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num / 10;
+    }
+    printf("%d", sum);
+    return 0;
+}
+-------------------------------------------
+
+Q12. 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int rem, sum = 0;
+    int temp = num;
+    while ( num > 0)
+    {
+        rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num / 10;
+    }
+    if ( sum == temp)
+    {
+        printf("This Number is Pallindrome");
+    }
+    else 
+    {
+        printf("This Number is not Pallindrome");
+    }
+    return 0;
+}
+--------------------------------------------------------
+
+Q13.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int rem, sum = 0;
+    int temp = num;
+    while ( num > 0)
+    {
+        rem = num % 10;
+        sum = sum + rem * rem * rem;
+        num = num / 10;
+    }
+    if ( sum == temp)
+    {
+        printf("This Number is Armstrong");
+    }
+    else 
+    {
+        printf("This Number is not Armstrong");
+    }
+    return 0;
+}
+----------------------------------------------------
+
+Q14.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int count = 0;
+    while(num > 0)
+    {
+    count++;
+    num = num / 10;
+    }
+    printf("%d", count);
+    return 0;
+}    
+----------------------------------------------------
+
+Q15. 
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int rem, sum = 0;
+    while ( num > 0)
+    {
+        rem = num % 10;
+        sum = sum + rem;
+        num = num / 10;
+    }
+    printf("%d", sum);
+    return 0 ;
+}
+---------------------------------------------
+
+Q16.
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i<=100; i++ )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+-------------------------------------------
+
+Q17.
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for( i; i>=1; i-- )
+    {
+        printf(" %d", i);
+    }
+    
+    return 0;
+}
+------------------------------------------
+
+Q18.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+        printf("Enter a Number :- ");
+        scanf("%d", &num);
+        int fact = 1;
+        for (int i = 1; i <= num; i++)
+        {
+            fact = fact * i;
+        }
+        printf("%d \n \n", fact);
+    return 0;
+}
+-----------------------------------------
+
+Q19.
+
+#include<stdio.h>
+int main()
+{
+    int n1 = 0, n2 = 1, n3, num;
+        printf("%d%d", n1, n2);
+        printf("Enter a Number :- ");
+        scanf("%d", &num);
+        for (int i = 1; i <= num; i++)
+        {
+            n3 = n1 + n2;
+            printf("%d \n ", n3);
+            n1 = n2;
+            n2 = n3;
+        }
+        return 0;
+}
+------------------------------------------
+
+Q20.
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=10; i++)
+    {
+        if ( i%2==0)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+-----------------------------------------
+
+Q21.
+
+#include<stdio.h>
+int main()
+{
+    int i;
+    printf("Enter a Number :- ");
+    scanf("%d", &i);
+    for(i; i<=10; i++)
+    {
+        if ( i%2==1)
+        {
+            printf(" %d", i);
+        }
+    }
+    return 0;
+}
+---------------------------------------
+
+Q22.
+
+// No Return No Argument
+
+#include<stdio.h>
+void add();
+int main()
+{
+    add();
+return 0;
+}
+void add ()
+    {
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a + b;
+    printf("Addition of these two Numbers : %d \n \n", c);
+    }
+------------------------------------------------------------
+
+Q23.
+
+// No Return and Argument
+
+#include<stdio.h>
+void add(int a, int b);
+int main()
+{
+    int a, b;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    add(a, b);
+return 0;
+}
+void add (int a, int b)
+    {
+    int c;
+    c = a + b;
+    printf("Addition of these two Numbers : %d \n \n", c);
+    }
+---------------------------------------------------------------
+
+Q24.
+
+// Return and No Argument
+
+#include<stdio.h>
+int add();
+int main()
+{
+    printf("%d", add());
+return 0;
+}
+int add ()
+    {
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a + b;
+    return c;
+    }
+------------------------------------------------
+
+Q25.
+
+// Return and Argument
+
+#include<stdio.h>
+int add ( int a, int b);
+int main()
+{
+    int a, b;
+    printf("Enter Two Number :- ");
+    scanf("%d %d", &a, &b);
+    printf("%d", add(a,b));
+    return 0;
+}
+int add ( int a, int b)
+{
+    int c = a + b;
+    return c;
+}
+-----------------------------------------------
+
+Q26.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :-");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for ( int j = 1; j<=i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+----------------------------------------------
+
+Q27.
+
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    for ( int i=1; i<=num; i++)
+    {
+        for (int s = num; s>=i; s--)
+        {
+            printf(" ");
+        }
+        for ( int j = 1; j<=i; j++ )
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+------------------------------------------
