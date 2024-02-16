@@ -1,0 +1,1451 @@
+Q1.
+
+// No Return No Argument
+
+#include<stdio.h>
+void add();
+int main()
+{
+    add();
+return 0;
+}
+void add ()
+    {
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a + b;
+    printf("Addition of these two Numbers : %d \n \n", c);
+    }
+--------------------------------------------------------------
+
+Q2.
+
+// No Return and Argument
+
+// add(); sub(); multi(); divi(); mod();
+
+#include<stdio.h>
+void add(int a, int b);
+void sub(int a, int b);
+void multi(int a, int b);
+void divi(int a, int b);
+void mod(int a, int b);
+int main()
+{
+    int a, b;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    add(a,b);
+    sub(a,b);
+    multi(a,b);
+    divi(a,b);
+    mod(a,b);
+    return 0;
+}
+void add (int a, int b)
+    {
+    int c;
+    c = a + b;
+    printf("Addition of these two Numbers : %d \n \n", c);
+    }
+
+void sub (int a, int b)
+    {
+    int c;
+    
+    c = a - b;
+    printf("Subtraction of these two Numbers : %d \n \n", c);
+    }
+    
+void multi (int a, int b)
+    {
+    int c;
+    c = a * b;
+    printf("Multiplication of these two Numbers : %d \n \n", c);
+    }
+    
+void divi (int a, int b)
+    {
+    int c;
+    
+    c = a / b;
+    printf("Dividation of these two Numbers : %d \n \n ", c);
+    }
+
+void mod (int a, int b)
+    {
+    int c;
+    
+    c = a % b;
+    printf("Modular of these two Numbers : %d", c);
+    }
+--------------------------------------------------------------------
+
+Q3.
+
+// No Return and Argument
+
+#include<stdio.h>
+void voter (int age, int weight);
+void gender (char g);
+void vowel ( char alpha);
+void three ( int a, int b, int c);
+void armstrong( int num, int rem, int sum, int temp);
+void swap(int swap1, int swap2, int third);
+void pallindrome(int num1, int rem1, int sum1, int temp1);
+void fibonacci(int n1, int n2, int n3, int num7 );
+void factorial(int num6, int fact);
+void countt(int num3, int count);
+void sumofdigit(int num2, int rem2, int sum2);
+void even(int num4);    // -->45-->89 
+void odd(int num5);              //-->23-->89
+void month(int m);
+void week(int w);
+void area(int base, int height);
+int main()
+{
+    int age;
+    printf("Enter Your Age :- ");
+    scanf("%d", &age);
+    
+    int weight;
+        printf("Enter Your Weight :- ");
+        scanf("%d", &weight);
+    voter (age,weight);
+    
+    char g;
+    printf("Enter a Character for Checking Gender :- ");
+    scanf(" %c", &g);
+    gender (g);
+    
+    char alpha;
+    printf("Enter Any Character :- ");
+    scanf(" %c", &alpha);
+    vowel (alpha);
+    
+    int a, b, c;
+    printf("Enter Three Number :- ");
+    scanf("%d%d%d", &a, &b, &c);
+    three (a,b,c);
+    
+    int num, rem, sum = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int temp = num;
+    armstrong(num, rem, sum, temp);
+    
+    int swap1, swap2, third;
+    printf("Enter First Number :- ");
+    scanf("%d", &swap1);
+    printf("Enter Second Number :- ");
+    scanf("%d", &swap2);
+    swap (swap1,swap2,third);
+    
+    int num1, rem1, sum1 = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num1);
+    int temp1 = num1;
+    pallindrome(num1, rem1, sum1, temp1);
+    
+    int num2, rem2, sum2 = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num2);
+    sumofdigit(num2, rem2,sum2);
+    
+    int m;
+    printf("Enter a Number for Month Check :- ");
+    scanf("%d", &m);
+    month(m);
+    
+    int w;
+    printf("Enter a Number for Week Check :- ");
+    scanf("%d", &w);
+    week(w);
+    
+    int num3, count = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num3);
+    countt(num3,count);
+    
+    int num4;
+    printf("Enter a Number :- ");
+    scanf("%d", &num4);
+    even(num4);
+    
+    int num5;
+    printf("Enter a Number :- ");
+    scanf("%d", &num5);
+    odd(num5);
+    
+    int num6, fact = 1;
+    printf("Enter a Number :- ");
+    scanf("%d", &num6);
+    factorial(num6, fact);
+    
+    int base;
+    printf("Enter the value of base :- ");
+    scanf("%d", &base);
+    int height;
+    printf("Enter the value of height :- ");
+    scanf("%d", &height);
+    area(base, height);
+    
+    int n1 = 0, n2 = 1, n3, num7;
+    printf("%d%d", n1, n2);
+    printf("Enter a Number :- ");
+    scanf("%d", &num7);
+    fibonacci(n1,n2,n3,num7);
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+void voter (int age, int weight)
+{
+    if (age>18)
+    {
+        
+    if(weight > 50)
+    {
+        printf("Valid \n\n ");
+    }
+    else 
+    {
+        printf(" Invalid!!!!!\n\n");
+    }
+    }
+    else 
+    {
+        printf("Invalid!!!!\n\n");
+    }
+}
+
+void gender( char g)
+{
+    if ( g == 'm')
+    {
+        printf("Male \n \n ");
+    }
+    else if ( g == 'f')
+    {
+        printf("Female \n \n ");
+    }
+    else
+    {
+        printf("Not Match\n \n ");
+    }
+}
+
+void vowel(char alpha)
+{
+    if ( alpha == 'a', 'e', 'i', 'o', 'u')
+    {
+        printf("This Character is Vowel\n\n ");
+    }
+    else 
+    {
+        printf("This Character is Consonant\n\n");
+    }
+}
+
+void three ( int a, int b, int c)
+{
+    if(a > b && a > c)
+    {
+        printf("A is Maximum\n\n");
+    }
+    else if (b > a && b > c)
+    {
+        printf("B is Maximum\n\n");
+    }
+    else {
+        printf("C is Maximum\n\n");
+    }
+}
+
+void armstrong ( int num, int rem, int sum, int temp)
+{
+    while ( num>0 )
+        {
+            rem = num % 10;
+            sum = sum + rem * rem * rem;
+            num = num / 10;
+        }
+        if ( sum == temp)
+        {
+            printf("This Number is Armstrong\n\n");
+        }
+        else 
+        {
+            printf("This is Number is Not Armstrong\n\n");
+        }
+}
+
+void swap(int swap1, int swap2, int third)
+{
+    third = swap1;
+    swap1 = swap2;
+    swap2 = third;
+    
+    printf("The Swap Value of First is %d \n", swap1);
+    printf("The Swap value of Second is %d \n", swap2);
+}
+
+void pallindrome(int num1, int rem1, int sum1, int temp1)
+{
+    while ( num1 > 0)
+    {
+        rem1 = num1 % 10;
+        sum1 = sum1 * 10 + rem1;
+        num1 = num1 / 10;
+    }
+    if ( sum1 == temp1)
+    {
+        printf("This Number is Pallindrome\n\n");
+    }
+    else 
+    {
+        printf("This Number is not Pallindrome\n\n");
+    }
+}
+
+void factorial(int num6, int fact)
+{
+    for ( int i = 1; i <= num6; i++ )
+    {
+        fact = fact * i;
+    }
+    printf(" %d\n\n", fact);
+}
+
+void countt(int num3, int count)
+{
+    while(num3 > 0)
+    {
+    count++;
+    num3 = num3 / 10;
+    }
+    printf("%d\n\n", count);
+}
+
+void sumofdigit(int num2, int rem2, int sum2)
+{
+    while ( num2 > 0)
+    {
+        rem2 = num2 % 10;
+        sum2 = sum2 + rem2;
+        num2 = num2 / 10;
+    }
+    printf("%d\n\n", sum2);
+}
+
+void even(int num4)
+{
+   while(num4 <= 89)
+    {
+        if ( num4 % 2 == 0)
+        {
+            printf(" %d\n", num4);
+        }
+    num4++;
+    } 
+}
+
+void odd (int num5)
+{
+    while(num5 <= 89)
+    {
+        if ( num5 % 2 == 1)
+        {
+            printf(" %d\n", num5);
+        }
+    num5++;
+    }
+}
+
+void month(int m)
+{
+    if ( m == 1)
+    {
+        printf("January\n\n");
+    }
+    else if ( m == 2)
+    {
+        printf("Februray\n\n");
+    }
+    else if ( m == 3)
+    {
+        printf("March\n\n");
+    }
+    else if (m == 4)
+    {
+        printf("April\n\n");
+    }
+    else if (m == 5)
+    {
+        printf("May\n\n");
+    }
+    else if ( m == 6)
+    {
+        printf("June\n\n");
+    }
+    else if (m == 7)
+    {
+        printf("July\n\n");
+    }
+    else if (m == 8)
+    {
+        printf("August\n\n");
+    }
+    else if ( m == 9)
+    {
+        printf("Sepetember\n\n");
+    }
+    else if (m == 10)
+    {
+        printf("October\n\n");
+    }
+    else if(m == 11)
+    {
+        printf("November\n\n");
+    }
+    else if( m == 12)
+    {
+        printf("December\n\n");
+    }
+    else {
+        printf("Invalid \n Try Again!\n\n");
+    }
+}
+
+void week ( int w)
+{
+    if ( w == 1)
+    {
+        printf("Sunday\n\n");
+    }
+    else if ( w == 2)
+    {
+        printf("Monday\n\n");
+    }
+    else if ( w == 3)
+    {
+        printf("Tuesday\n\n");
+    }
+    else if ( w == 4)
+    {
+        printf("Wednesday\n\n");
+    }
+    else if( w == 5)
+    {
+        printf("Thursday\n\n");
+    }
+    else if (w == 6)
+    {
+        printf("Friday\n\n");
+    }
+    else if ( w == 7)
+    {
+        printf("Saturday\n\n");
+    }
+    else 
+    {
+        printf("Invalid \n Try Again!\n\n");
+    }
+}
+
+void area ( int base, int height)
+{
+    float a = 0.5 * (base * height);
+       printf("Area of triangler is : %f\n\n", a);
+       
+}
+
+void fibonacci(int n1, int n2, int n3, int num7)
+{
+    for (int i = 1; i <= num7; i++)
+        {
+            n3 = n1 + n2;
+            printf("%d \n ", n3);
+            n1 = n2;
+            n2 = n3;
+        }
+}
+--------------------------------------------------------------------
+
+Q4.
+
+// Return and No Argument
+// add(); sub(); multi(); divi(); mod();
+
+#include<stdio.h>
+int add();
+int sub();
+int multi();
+int divi();
+int mod();
+int main()
+{
+    printf("%d\n", add());
+    printf("%d\n", sub());
+    printf("%d\n", multi());
+    printf("%d\n", divi());
+    printf("%d\n", mod());
+return 0;
+}
+int add ()
+    {
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a + b;
+    return c;
+    }
+
+int sub ()
+    {
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a - b;
+    return c;
+    }
+    
+int multi ()
+    {
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a * b;
+    return c;
+    }
+    
+int divi ()
+    {
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a / b;
+    return c;
+    }
+int mod ()
+{
+    int a, b, c;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    c = a % b;
+    return c;
+
+}
+--------------------------------------------------------------------
+
+Q5. // Return and No Argument
+
+#include<stdio.h>
+int voter ();
+int gender ();
+int vowel ();
+int three ();
+int armstrong();
+int swap();
+int pallindrome();
+int fibonacci();
+int factorial();
+int countt();
+int sumofdigit();
+int even();    // -->45-->89 
+int odd();              //-->23-->89
+int month();
+int week();
+int area();
+int main()
+{
+    printf("%d\n", voter());
+    
+    printf("%d\n", gender());
+    
+    printf("%d\n", vowel());
+    
+    printf("%d\n", three());
+    
+    printf("%d\n", armstrong());
+    
+    printf("%d", swap ());
+    
+    printf("%d\n", pallindrome());
+    
+    printf("%d\n",sumofdigit());
+    
+    printf("%d\n", month());
+    
+    printf("%d\n", week());
+    
+    printf("%d\n", countt());
+    
+    printf("%d\n", even());
+    
+    printf("%d\n", odd());
+    
+    printf("%d\n", factorial());
+    
+    printf("%d\n", area());
+    
+    printf("%d\n", fibonacci());
+    
+    
+    return 0;
+}
+
+
+
+
+int voter ()
+{
+    int age;
+    printf("Enter Your Age :- ");
+    scanf("%d", &age);
+    
+    int weight;
+        printf("Enter Your Weight :- ");
+        scanf("%d", &weight);
+    
+    if (age>18)
+    {
+        
+    if(weight > 50)
+    {
+        printf("Valid \n\n ");
+    }
+    else 
+    {
+        printf(" Invalid!!!!!\n\n");
+    }
+    }
+    else 
+    {
+        printf("Invalid!!!!\n\n");
+    }
+    return age, weight;
+}
+
+int gender()
+{
+    char g;
+    printf("Enter a Character for Checking Gender :- ");
+    scanf(" %c", &g);
+    
+    if ( g == 'm')
+    {
+        printf("Male \n \n ");
+    }
+    else if ( g == 'f')
+    {
+        printf("Female \n \n ");
+    }
+    else
+    {
+        printf("Not Match\n \n ");
+    }
+    return g;
+}
+
+int vowel()
+{
+    char alpha;
+    printf("Enter Any Character :- ");
+    scanf(" %c", &alpha);
+    
+    if ( alpha == 'a', 'e', 'i', 'o', 'u')
+    {
+        printf("This Character is Vowel\n\n ");
+    }
+    else 
+    {
+        printf("This Character is Consonant\n\n");
+    }
+    return alpha;
+}
+
+int three ()
+{
+    int a, b, c;
+    printf("Enter Three Number :- ");
+    scanf("%d%d%d", &a, &b, &c);
+    
+    if(a > b && a > c)
+    {
+        printf("A is Maximum\n\n");
+    }
+    else if (b > a && b > c)
+    {
+        printf("B is Maximum\n\n");
+    }
+    else {
+        printf("C is Maximum\n\n");
+    }
+    return a, b, c;
+}
+
+int armstrong ()
+{
+    int num, rem, sum = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int temp = num;
+    
+    while ( num>0 )
+        {
+            rem = num % 10;
+            sum = sum + rem * rem * rem;
+            num = num / 10;
+        }
+        if ( sum == temp)
+        {
+            printf("This Number is Armstrong\n\n");
+        }
+        else 
+        {
+            printf("This is Number is Not Armstrong\n\n");
+        }
+        return sum;
+}
+
+int swap()
+{
+    int swap1, swap2, third;
+    printf("Enter First Number :- ");
+    scanf("%d", &swap1);
+    printf("Enter Second Number :- ");
+    scanf("%d", &swap2);
+    
+    third = swap1;
+    swap1 = swap2;
+    swap2 = third;
+    
+    printf("The Swap Value of First is %d \n", swap1);
+    printf("The Swap value of Second is %d \n", swap2);
+    return swap1, swap2;
+}
+
+int pallindrome()
+{
+    int num1, rem1, sum1 = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num1);
+    int temp1 = num1;
+    
+    while ( num1 > 0)
+    {
+        rem1 = num1 % 10;
+        sum1 = sum1 * 10 + rem1;
+        num1 = num1 / 10;
+    }
+    if ( sum1 == temp1)
+    {
+        printf("This Number is Pallindrome\n\n");
+    }
+    else 
+    {
+        printf("This Number is not Pallindrome\n\n");
+    }
+    return sum1;
+}
+
+int factorial()
+{
+    int num6, fact = 1;
+    printf("Enter a Number :- ");
+    scanf("%d", &num6);
+       
+    for ( int i = 1; i <= num6; i++ )
+    {
+        fact = fact * i;
+    }
+    return fact;
+}
+
+int countt()
+{
+    int num3, count = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num3);
+    
+    while(num3 > 0)
+    {
+    count++;
+    num3 = num3 / 10;
+    }
+    return count;
+}
+
+int sumofdigit()
+{
+    int num2, rem2, sum2 = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num2);
+    
+    while ( num2 > 0)
+    {
+        rem2 = num2 % 10;
+        sum2 = sum2 + rem2;
+        num2 = num2 / 10;
+    }
+    return sum2;
+}
+
+int even()
+{
+    int num4;
+    printf("Enter a Number :- ");
+    scanf("%d", &num4);
+    
+   while(num4 <= 89)
+    {
+        if ( num4 % 2 == 0)
+        {
+            printf(" %d\n", num4);
+        }
+    num4++;
+    } 
+    return num4;
+}
+
+int odd ()
+{
+    int num5;
+    printf("Enter a Number :- ");
+    scanf("%d", &num5);
+    
+    while(num5 <= 89)
+    {
+        if ( num5 % 2 == 1)
+        {
+            printf(" %d\n", num5);
+        }
+    num5++;
+    }
+    return num5;
+}
+
+int month()
+{
+    int m;
+    printf("Enter a Number for Month Check :- ");
+    scanf("%d", &m);
+    
+    if ( m == 1)
+    {
+        printf("January\n\n");
+    }
+    else if ( m == 2)
+    {
+        printf("Februray\n\n");
+    }
+    else if ( m == 3)
+    {
+        printf("March\n\n");
+    }
+    else if (m == 4)
+    {
+        printf("April\n\n");
+    }
+    else if (m == 5)
+    {
+        printf("May\n\n");
+    }
+    else if ( m == 6)
+    {
+        printf("June\n\n");
+    }
+    else if (m == 7)
+    {
+        printf("July\n\n");
+    }
+    else if (m == 8)
+    {
+        printf("August\n\n");
+    }
+    else if ( m == 9)
+    {
+        printf("Sepetember\n\n");
+    }
+    else if (m == 10)
+    {
+        printf("October\n\n");
+    }
+    else if(m == 11)
+    {
+        printf("November\n\n");
+    }
+    else if( m == 12)
+    {
+        printf("December\n\n");
+    }
+    else {
+        printf("Invalid \n Try Again!\n\n");
+    }
+    return m;
+}
+
+int week ()
+{
+    int w;
+    printf("Enter a Number for Week Check :- ");
+    scanf("%d", &w);
+    
+    if ( w == 1)
+    {
+        printf("Sunday\n\n");
+    }
+    else if ( w == 2)
+    {
+        printf("Monday\n\n");
+    }
+    else if ( w == 3)
+    {
+        printf("Tuesday\n\n");
+    }
+    else if ( w == 4)
+    {
+        printf("Wednesday\n\n");
+    }
+    else if( w == 5)
+    {
+        printf("Thursday\n\n");
+    }
+    else if (w == 6)
+    {
+        printf("Friday\n\n");
+    }
+    else if ( w == 7)
+    {
+        printf("Saturday\n\n");
+    }
+    else 
+    {
+        printf("Invalid \n Try Again!\n\n");
+    }
+    return w;
+}
+
+int area ()
+{
+    int base;
+    printf("Enter the value of base :- ");
+    scanf("%d", &base);
+    int height;
+    printf("Enter the value of height :- ");
+    scanf("%d", &height);
+    
+    float a = 0.5 * (base * height);
+       return a;
+}
+
+int fibonacci()
+{
+    int n1 = 0, n2 = 1, n3, num7;
+    printf("%d%d", n1, n2);
+    printf("Enter a Number :- ");
+    scanf("%d", &num7);
+    
+    for (int i = 1; i <= num7; i++)
+        {
+            n3 = n1 + n2;
+            printf("%d \n ", n3);
+            n1 = n2;
+            n2 = n3;
+        }
+        return n3;
+}
+--------------------------------------------------------------------
+
+Q6. 
+
+// Return and Argument
+// add(); sub(); multi(); divi(); mod();
+
+#include<stdio.h>
+int add(int a, int b);
+int sub(int a, int b);
+int multi(int a, int b);
+int divi(int a, int b);
+int mod(int a, int b);
+int main()
+{
+    int a, b;
+    printf("Enter First Number :- ");
+    scanf("%d", &a);
+    printf("Enter Second Number :- ");
+    scanf("%d", &b);
+    printf("%d \n  ", add(a,b));
+    printf("%d\n", sub(a,b));
+    printf("%d\n ", multi(a,b));
+    printf("%d\n ", divi(a,b));
+    printf("%d\n", mod(a,b));
+    return 0;
+}
+int add (int a, int b)
+    {
+    int c;
+    c = a + b;
+    return c;
+    }
+
+int sub (int a, int b)
+    {
+    int c;
+    
+    c = a - b;
+    return c;
+    }
+    
+int multi (int a, int b)
+    {
+    int c;
+    c = a * b;
+    return c;
+    }
+    
+int divi (int a, int b)
+    {
+    int c;
+    
+    c = a / b;
+    return c;
+    }
+
+int mod (int a, int b)
+    {
+    int c;
+    
+    c = a % b;
+    return c;
+    }
+-----------------------------------------------------------
+
+Q7. // Return and Argument
+
+#include<stdio.h>
+int voter (int age, int weight);
+int gender (char g);
+int vowel ( char alpha);
+int three ( int a, int b, int c);
+int armstrong( int num, int rem, int sum, int temp);
+int swap(int swap1, int swap2, int third);
+int pallindrome(int num1, int rem1, int sum1, int temp1);
+int fibonacci(int n1, int n2, int n3, int num7 );
+int factorial(int num6, int fact);
+int countt(int num3, int count);
+int sumofdigit(int num2, int rem2, int sum2);
+int even(int num4);    // -->45-->89 
+int odd(int num5);              //-->23-->89
+int month(int m);
+int week(int w);
+int area(int base, int height);
+int main()
+{
+    int age;
+    printf("Enter Your Age :- ");
+    scanf("%d", &age);
+    
+    int weight;
+        printf("Enter Your Weight :- ");
+        scanf("%d", &weight);
+    printf("%d\n", voter(age,weight));
+    
+    char g;
+    printf("Enter a Character for Checking Gender :- ");
+    scanf(" %c", &g);
+    printf("%d\n", gender (g));
+    
+    char alpha;
+    printf("Enter Any Character :- ");
+    scanf(" %c", &alpha);
+    printf("%d\n", vowel(alpha));
+    
+    int a, b, c;
+    printf("Enter Three Number :- ");
+    scanf("%d%d%d", &a, &b, &c);
+    printf("%d\n", three (a,b,c));
+    
+    int num, rem, sum = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num);
+    int temp = num;
+    printf("%d\n", armstrong(num, rem, sum, temp));
+    
+    int swap1, swap2, third;
+    printf("Enter First Number :- ");
+    scanf("%d", &swap1);
+    printf("Enter Second Number :- ");
+    scanf("%d", &swap2);
+    printf("%d", swap (swap1,swap2,third));
+    
+    int num1, rem1, sum1 = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num1);
+    int temp1 = num1;
+    printf("%d\n", pallindrome(num1, rem1, sum1, temp1));
+    
+    int num2, rem2, sum2 = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num2);
+    printf("%d\n",sumofdigit(num2, rem2,sum2));
+    
+    int m;
+    printf("Enter a Number for Month Check :- ");
+    scanf("%d", &m);
+    printf("%d\n", month(m));
+    
+    int w;
+    printf("Enter a Number for Week Check :- ");
+    scanf("%d", &w);
+    printf("%d\n", week(w));
+    
+    int num3, count = 0;
+    printf("Enter a Number :- ");
+    scanf("%d", &num3);
+    printf("%d\n", countt(num3,count));
+    
+    int num4;
+    printf("Enter a Number :- ");
+    scanf("%d", &num4);
+    printf("%d\n", even(num4));
+    
+    int num5;
+    printf("Enter a Number :- ");
+    scanf("%d", &num5);
+    printf("%d\n", odd(num5));
+    
+    int num6, fact = 1;
+    printf("Enter a Number :- ");
+    scanf("%d", &num6);
+    printf("%d\n", factorial(num6, fact));
+    
+    int base;
+    printf("Enter the value of base :- ");
+    scanf("%d", &base);
+    int height;
+    printf("Enter the value of height :- ");
+    scanf("%d", &height);
+    printf("%d\n", area(base, height));
+    
+    int n1 = 0, n2 = 1, n3, num7;
+    printf("%d%d", n1, n2);
+    printf("Enter a Number :- ");
+    scanf("%d", &num7);
+    printf("%d\n", fibonacci(n1,n2,n3,num7));
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+int voter (int age, int weight)
+{
+    if (age>18)
+    {
+        
+    if(weight > 50)
+    {
+        printf("Valid \n\n ");
+    }
+    else 
+    {
+        printf(" Invalid!!!!!\n\n");
+    }
+    }
+    else 
+    {
+        printf("Invalid!!!!\n\n");
+    }
+    return age, weight;
+}
+
+int gender( char g)
+{
+    if ( g == 'm')
+    {
+        printf("Male \n \n ");
+    }
+    else if ( g == 'f')
+    {
+        printf("Female \n \n ");
+    }
+    else
+    {
+        printf("Not Match\n \n ");
+    }
+    return g;
+}
+
+int vowel(char alpha)
+{
+    if ( alpha == 'a', 'e', 'i', 'o', 'u')
+    {
+        printf("This Character is Vowel\n\n ");
+    }
+    else 
+    {
+        printf("This Character is Consonant\n\n");
+    }
+    return alpha;
+}
+
+int three ( int a, int b, int c)
+{
+    if(a > b && a > c)
+    {
+        printf("A is Maximum\n\n");
+    }
+    else if (b > a && b > c)
+    {
+        printf("B is Maximum\n\n");
+    }
+    else {
+        printf("C is Maximum\n\n");
+    }
+    return a, b, c;
+}
+
+int armstrong ( int num, int rem, int sum, int temp)
+{
+    while ( num>0 )
+        {
+            rem = num % 10;
+            sum = sum + rem * rem * rem;
+            num = num / 10;
+        }
+        if ( sum == temp)
+        {
+            printf("This Number is Armstrong\n\n");
+        }
+        else 
+        {
+            printf("This is Number is Not Armstrong\n\n");
+        }
+        return sum;
+}
+
+int swap(int swap1, int swap2, int third)
+{
+    third = swap1;
+    swap1 = swap2;
+    swap2 = third;
+    
+    printf("The Swap Value of First is %d \n", swap1);
+    printf("The Swap value of Second is %d \n", swap2);
+    return swap1, swap2;
+}
+
+int pallindrome(int num1, int rem1, int sum1, int temp1)
+{
+    while ( num1 > 0)
+    {
+        rem1 = num1 % 10;
+        sum1 = sum1 * 10 + rem1;
+        num1 = num1 / 10;
+    }
+    if ( sum1 == temp1)
+    {
+        printf("This Number is Pallindrome\n\n");
+    }
+    else 
+    {
+        printf("This Number is not Pallindrome\n\n");
+    }
+    return sum1;
+}
+
+int factorial(int num6, int fact)
+{
+    for ( int i = 1; i <= num6; i++ )
+    {
+        fact = fact * i;
+    }
+    return fact;
+}
+
+int countt(int num3, int count)
+{
+    while(num3 > 0)
+    {
+    count++;
+    num3 = num3 / 10;
+    }
+    return count;
+}
+
+int sumofdigit(int num2, int rem2, int sum2)
+{
+    while ( num2 > 0)
+    {
+        rem2 = num2 % 10;
+        sum2 = sum2 + rem2;
+        num2 = num2 / 10;
+    }
+    return sum2;
+}
+
+int even(int num4)
+{
+   while(num4 <= 89)
+    {
+        if ( num4 % 2 == 0)
+        {
+            printf(" %d\n", num4);
+        }
+    num4++;
+    } 
+    return num4;
+}
+
+int odd (int num5)
+{
+    while(num5 <= 89)
+    {
+        if ( num5 % 2 == 1)
+        {
+            printf(" %d\n", num5);
+        }
+    num5++;
+    }
+    return num5;
+}
+
+int month(int m)
+{
+    if ( m == 1)
+    {
+        printf("January\n\n");
+    }
+    else if ( m == 2)
+    {
+        printf("Februray\n\n");
+    }
+    else if ( m == 3)
+    {
+        printf("March\n\n");
+    }
+    else if (m == 4)
+    {
+        printf("April\n\n");
+    }
+    else if (m == 5)
+    {
+        printf("May\n\n");
+    }
+    else if ( m == 6)
+    {
+        printf("June\n\n");
+    }
+    else if (m == 7)
+    {
+        printf("July\n\n");
+    }
+    else if (m == 8)
+    {
+        printf("August\n\n");
+    }
+    else if ( m == 9)
+    {
+        printf("Sepetember\n\n");
+    }
+    else if (m == 10)
+    {
+        printf("October\n\n");
+    }
+    else if(m == 11)
+    {
+        printf("November\n\n");
+    }
+    else if( m == 12)
+    {
+        printf("December\n\n");
+    }
+    else {
+        printf("Invalid \n Try Again!\n\n");
+    }
+    return m;
+}
+
+int week ( int w)
+{
+    if ( w == 1)
+    {
+        printf("Sunday\n\n");
+    }
+    else if ( w == 2)
+    {
+        printf("Monday\n\n");
+    }
+    else if ( w == 3)
+    {
+        printf("Tuesday\n\n");
+    }
+    else if ( w == 4)
+    {
+        printf("Wednesday\n\n");
+    }
+    else if( w == 5)
+    {
+        printf("Thursday\n\n");
+    }
+    else if (w == 6)
+    {
+        printf("Friday\n\n");
+    }
+    else if ( w == 7)
+    {
+        printf("Saturday\n\n");
+    }
+    else 
+    {
+        printf("Invalid \n Try Again!\n\n");
+    }
+    return w;
+}
+
+int area ( int base, int height)
+{
+    float a = 0.5 * (base * height);
+       return a;
+}
+
+int fibonacci(int n1, int n2, int n3, int num7)
+{
+    for (int i = 1; i <= num7; i++)
+        {
+            n3 = n1 + n2;
+            printf("%d \n ", n3);
+            n1 = n2;
+            n2 = n3;
+        }
+        return n3;
+}
+
+-----------------------------------------------------------
